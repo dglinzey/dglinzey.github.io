@@ -1,18 +1,23 @@
 html * {
     box-sizing: border-box;
 }
-*:before, *:after{
+
+*:before,
+*:after {
     box-sizing: border-box;
 }
+
 body {
     background-color: #e3f4f9;
     font-size: 20px;
 }
+
 header img {
     height: 90px;
     width: 160px;
     margin-left: -10px;
 }
+
 header {
     background-color: #608eea;
     margin: 0;
@@ -28,6 +33,7 @@ header {
     border-color: darkgray;
     border-width: 2px;
 }
+
 nav {
     float: right;
     position: absolute;
@@ -35,71 +41,130 @@ nav {
     top: 0;
     margin: 40px 20px 20px 20px;
 }
+
 .icon {
     width: 40px;
-
 }
+
 footer li {
     display: inline;
     font-size: 14px;
 }
+
 .ads {
-    background-color:burlywood;
+    background-color: burlywood;
     height: 65px;
     padding: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .nowicon {
     position: relative;
     top: 15px;
     left: 20px;
     width: 125px;
 }
+
 .now {
     background-color: #608eea;
     height: 300px;
     margin: 0;
 }
+
 section h1 {
     font-family: sans-serif;
     font-size: 25px;
     padding-top: 20px;
     padding-left: 20px;
 }
+
 section h2 {
     font-family: sans-serif;
     font-size: 20px;
     padding-top: 0px;
     padding-left: 20px;
-    position: relative;
-    top: -20px;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    text-align: right;
 }
+
 .nowp {
     position: absolute;
     top: 255px;
     right: 20px;
     line-height: 1.7;
 }
+
 .detail {
     background-color: #608eea;
     height: 225px;
     margin: 0;
 }
+
 .detailp {
     line-height: 1.7;
     padding-left: 50px;
 }
+
 .hourly {
     background-color: #608eea;
     height: 275px;
     margin: 0;
 }
+
 .hourly p {
     font-size: 18px;
     padding-left: 10px;
 }
+
 .hourchart {
     margin: 0 20px 0;
     width: 300px;
+}
+
+.wireframe {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 20px;
+    position: absolute;
+    top: 210px;
+    right: 20px;
+    text-align: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(227, 244, 249);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    padding: 2px 2px;
+    right: 0;
+    z-index: 1;
+    font-size: 18px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #e3f4f9;
+    position: absolute;
+    top: 22px;
+    right: -5px;
 }
