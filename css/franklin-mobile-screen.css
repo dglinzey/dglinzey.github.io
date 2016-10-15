@@ -1,7 +1,7 @@
 html * {
     box-sizing: border-box;
 }
-*:before, *after{
+*before *after{
     box-sizing: border-box;
 }
 body {
@@ -52,7 +52,7 @@ footer li {
 }
 .nowicon {
     position: relative;
-    top: 20px;
+    top: 15px;
     left: 20px;
     width: 125px;
 }
@@ -67,9 +67,17 @@ section h1 {
     padding-top: 20px;
     padding-left: 20px;
 }
+section h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-left: 20px;
+    position: relative;
+    top: -20px;
+}
 .nowp {
     position: absolute;
-    top: 250px;
+    top: 255px;
     right: 20px;
     line-height: 1.7;
 }
