@@ -10,6 +10,7 @@ html * {
 body {
     background-color: #e3f4f9;
     font-size: 20px;
+    margin: 0px;
 }
 
 header img {
@@ -21,10 +22,11 @@ header img {
 header {
     background-color: #608eea;
     margin: 0;
+    width: 100%;
 }
 
 .input[type=text] {
-    width: 150px;
+    width: 120px;
     height: 30px;
     position: relative;
     top: -15px;
@@ -33,7 +35,9 @@ header {
     border-color: darkgray;
     border-width: 2px;
 }
-
+.width {
+    width:
+}
 nav {
     float: right;
     position: absolute;
@@ -44,6 +48,9 @@ nav {
 
 .icon {
     width: 40px;
+    position: relative;
+    top: 0px;
+    left: 0;
 }
 
 footer li {
@@ -51,60 +58,99 @@ footer li {
     font-size: 14px;
 }
 
+.cities {
+    background-color: #608eea;
+    height: 80px;
+    margin: 0px 3%;
+}
+
+.smallh1 {
+    font-family: sans-serif;
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.currentcity {
+    position: relative;
+    left: 150px;
+    top: -42px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #e3f4f9;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    width: 320px;
+}
+
+.othercities {
+    font-size: 15px;
+    position: relative;
+    top: -50px;
+    left: -33px;
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #e3f4f9;
+    padding: 1px;
+    border-radius: 5px;
+    margin: 0px 2px 0px 0px;
+}
+
 .ads {
     background-color: burlywood;
     height: 65px;
     padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 3%;
 }
 
 .nowicon {
     position: relative;
     top: 15px;
-    left: 20px;
-    width: 125px;
+    left: 55%;
+    width: 40%;
+    max-width: 175px;
 }
 
 .now {
     background-color: #608eea;
     height: 300px;
-    margin: 0;
+    margin: 0px 3%;
 }
 
 section h1 {
     font-family: sans-serif;
     font-size: 25px;
+    color: aliceblue;
     padding-top: 20px;
     padding-left: 20px;
 }
 
-section h2 {
-    font-family: sans-serif;
-    font-size: 20px;
-    padding-top: 0px;
-    padding-left: 20px;
-    position: absolute;
-    top: 200px;
-    right: 20px;
-    text-align: right;
-}
-
 .nowp {
     position: absolute;
-    top: 255px;
-    right: 20px;
+    top: 335px;
+    left: 10%;
     line-height: 1.7;
+    color: aliceblue;
 }
 
 .detail {
     background-color: #608eea;
     height: 225px;
-    margin: 0;
+    margin: 0 3%;
 }
 
 .detailp {
     line-height: 1.7;
+    color: aliceblue;
     padding-left: 50px;
 }
 
@@ -112,22 +158,399 @@ section h2 {
     background-color: #608eea;
     height: 275px;
     margin: 0;
+    display: none;
 }
 
-.hourly p {
-    font-size: 18px;
-    padding-left: 10px;
+.hourtable {
+    display: none;
 }
 
-.hourchart {
-    margin: 0 20px 0;
-    width: 300px;
-}
-
-.wireframe {
+.wireframesmall {
     width: 100%;
 }
 
+.wireframetab {
+    display: none;
+}
+
+.forcast {
+    display: none;
+}
+
+.map {
+    display: none;
+}
+.adstab {
+    display: none;
+}
+.wireframelarge {
+    display: none;
+}
+@media (min-width: 550px) {
+    .wireframetab {
+        width: 100%;
+        display: inherit;
+    }
+    .wireframesmall {
+        display: none;
+    }
+
+    .ads {
+        background-color: burlywood;
+        height: 65px;
+        padding: 15px;
+        margin: 15px 3%;
+        width: 45%;
+    }
+    .adstab {
+        background-color: burlywood;
+        height: 65px;
+        padding: 15px;
+        margin: 15px 3%;
+        width: 45%;
+        display: inline;
+        float: right;
+        position: relative;
+        top: -95px;
+    }
+    .input[type=text] {
+        width: 200px;
+        height: 30px;
+        position: relative;
+        top: -15px;
+        right: 10%;
+        font-size: 15px;
+        border-radius: 10px;
+        border-color: darkgray;
+        border-width: 2px;
+    }
+    header img {
+        height: 90px;
+        width: 170px;
+        margin-left: 0px;
+    }
+    .now {
+        background-color: #608eea;
+        height: 300px;
+        margin: 0px 3%;
+        width: 45%;
+    }
+    .detail {
+        background-color: #608eea;
+        height: 230px;
+        margin: 0 3%;
+        width: 45%;
+        position: absolute;
+        float: right;
+        display: inline;
+        left: 49%;
+        top: 295px;
+    }
+
+    .detailp {
+        line-height: 1.7;
+        color: aliceblue;
+        padding-left: 50px;
+        position: relative;
+        top: -10px;
+    }
+
+    .hourly {
+        background-color: #608eea;
+        height: 295px;
+        margin: 0 3%;
+        display: block;
+        width: 45%;
+        position: relative;
+        left: 49%;
+        top: -65px;
+    }
+
+    .hourtable {
+        font-size: 20px;
+        padding-left: 10px;
+        display: block;
+        overflow: auto;
+        width: 100%;
+        color: aliceblue;
+    }
+    table, th, td {
+        border: 2px solid;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    .hourchart {
+        margin: 4%;
+        width: 92%;
+        height: 75px;
+        display: block;
+    }
+    ul {
+        width: 500px;
+    }
+    .othercities {
+        font-size: 16px;
+        position: relative;
+        top: -50px;
+        left: -30px;
+        display: inline;
+        float: left;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e3f4f9;
+        padding: 1px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .forcast {
+        background-color: #608eea;
+        height: 235px;
+        margin: 0px 3%;
+        width: 45%;
+        position: absolute;
+        top: 615px;
+        display: block;
+    }
+    .ficon {
+        width: 25px;
+        margin-left: 15%;
+    }
+    .forcasttable {
+        font-size: 15px;
+        padding: 1px;
+        display: block;
+        overflow: auto;
+        width: 98%;
+        color: aliceblue;
+        margin: 0 1%;
+        position: relative;
+        top: -20px;
+    }
+    .forcasth1 {
+        position: relative;
+        top: -10px;
+    }
+    footer ul {
+        margin: 0 10%;
+        padding: 0;
+        width: 60%;
+    }
+    .wireframelarge {
+        display: none;
+    }
+}
+@media (min-width: 1000px) {
+    .wireframelarge {
+        width: 100%;
+        display: block;
+    }
+    .wireframetab {
+        display: none;
+    }
+    .ads {
+        background-color: burlywood;
+        height: 230px;
+        padding: 15px;
+        margin: 15px 3%;
+        width: 29%;
+        position: relative;
+        float: right;
+        top: -15px;
+    }
+    .now {
+        background-color: #608eea;
+        height: 315px;
+        margin: 0px 3%;
+        width: 29%;
+    }
+    .nowicon {
+        position: relative;
+        top: 0px;
+        left: 56%;
+        width: 40%;
+        max-width: 175px;
+    }
+    .input[type=text] {
+        width: 250px;
+        height: 30px;
+        position: relative;
+        top: -15px;
+        right: 10%;
+        font-size: 15px;
+        border-radius: 10px;
+        border-color: darkgray;
+        border-width: 2px;
+    }
+    header img {
+        height: 90px;
+        width: 170px;
+        margin-left: 5%;
+    }
+    .othercities {
+        font-size: 16px;
+        position: relative;
+        top: -50px;
+        left: -30px;
+        display: inline;
+        float: left;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e3f4f9;
+        padding: 2px;
+        border-radius: 5px;
+        margin: 0 10px;
+    }
+    .cities {
+        background-color: #608eea;
+        height: 80px;
+        margin: 0;
+        width: 40%;
+        position: absolute;
+        top: 0px;
+        left: 25%;
+    }
+
+    .smallh1 {
+        font-family: sans-serif;
+        font-size: 22px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .currentcity {
+        position: relative;
+        left: 150px;
+        top: -42px;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e3f4f9;
+        padding: 2px;
+        border-radius: 5px;
+    }
+    .adstab {
+        background-color: burlywood;
+        height: 65px;
+        padding: 15px;
+        margin: 15px 3%;
+        width: 29%;
+        display: none;
+    }
+    .nowp {
+        position: absolute;
+        top: 160px;
+        left: 6%;
+        line-height: 1.7;
+        color: aliceblue;
+    }
+    .detail {
+        background-color: #608eea;
+        height: 230px;
+        margin: 0 3%;
+        width: 29%;
+        position: absolute;
+        float: inherit;
+        display: inline;
+        left: 32.5%;
+        top: 115px;
+    }
+    .hourly {
+        background-color: #608eea;
+        height: 295px;
+        margin: 0 3%;
+        display: block;
+        width: 61.5%;
+        position: relative;
+        left: 0%;
+        top: 5px;
+    }
+
+    .hourtable {
+        font-size: 20px;
+        padding-left: 10px;
+        display: block;
+        overflow: auto;
+        width: 100%;
+        color: aliceblue;
+    }
+    table, th, td {
+        border: 2px solid;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    .hourchart {
+        margin: 4%;
+        width: 92%;
+        height: 75px;
+        display: block;
+    }
+    #ad2 {
+        background-color: burlywood;
+        height: 65px;
+        padding: 15px;
+        margin: 15px 3%;
+        width: 29%;
+        position: absolute;
+        top: 350px;
+        left: 32.5%;
+    }
+    .map {
+        background-color: #608eea;
+        height: 385px;
+        margin: 0px 3%;
+        width: 29%;
+        display: block;
+        position: absolute;
+        top: 365px;
+        right: 0%;
+        float: right;
+    }
+    .mappic {
+        width: 95%;
+        margin: 20px 2%;
+        max-height: 70%;
+    }
+    .forcast {
+        background-color: #608eea;
+        height: 235px;
+        margin: 0 3% 100px 3%;
+        width: 61.5%;
+        position: relative;
+        top: 10px;
+        display: block;
+    }
+    .ficon {
+        width: 45px;
+        margin-left: 15%;
+    }
+    .forcasttable {
+        font-size: 20px;
+        padding: 5px;
+        display: block;
+        overflow: auto;
+        width: 550px;
+        color: aliceblue;
+        margin: 0 10%;
+        position: relative;
+        top: -20px;
+    }
+    .ad3 {
+        background-color: burlywood;
+        height: 235px;
+        padding: 15px;
+        margin: 15px 3%;
+        width: 29%;
+        float: right;
+        position: absolute;
+        top: 762px;
+        right: 0%
+
+}
+
+/*
 .dropdown {
     position: relative;
     display: inline-block;
@@ -168,3 +591,4 @@ section h2 {
     top: 22px;
     right: -5px;
 }
+*/

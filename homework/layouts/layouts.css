@@ -1,0 +1,41 @@
+html *{
+    box-sizing: border-box;
+}
+
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+header {
+    background-color: navy;
+    color: whitesmoke;
+    padding: 10px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding: 5%;
+}
+body{
+    font: 20px "times new roman", times, serif;
+    margin: 0;
+    padding: 0;
+}
+.page-nav {
+    background-color: navy;
+    color: whitesmoke;
+}
+h1 {
+    background-color: navy;
+    color: whitesmoke;
+}
+main {
+    background-color: navy;
+    color: whitesmoke;
+}
+
+@media (min-width: 500px) {
+
+}

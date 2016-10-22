@@ -14,21 +14,24 @@
             <img src="/images/weather-logo.png" alt="Weather Site Logo">
         </header>
         <nav>
+            <div class="width">
             <input class="input" type="text" name="search" placeholder="Search by Zip or City">
             <img src="/images/menu-icon.png" alt="Menu" class="icon">
+            </div>
         </nav>
         <main>
+            <section class="cities">
+                <h1 class="smallh1">Current City:</h1>
+                <a class="currentcity" href="#">Franklin, ID 83237</a>
+                <ul>
+                    <li><a class="othercities" href="#">Greenville, SC 29601</a></li>
+                    <li><a class="othercities" href="#"> Springfield, IL 62701</a></li>
+                </ul>
+            </section>
             <section class="ads">Advertisment Here</section>
+            <section class="adstab" id="adslarge2">Advertisment Here</section>
             <section class="now">
                 <h1>Weather Now </h1>
-                <div class="dropdown">
-                    <span>Franklin, ID<br>83237 </span>
-                    <div class="arrow"></div>
-                    <div class="dropdown-content">
-                        <p>Greenville, SC</p>
-                        <p>Springfield, IL</p>
-                    </div>
-                </div>
                 <img src="/images/sun-icon.png" alt="Sun icon" class="nowicon">
                 <p class="nowp">Sunny
                     <br>Temperature
@@ -47,11 +50,81 @@
             </section>
             <section class="hourly">
                 <h1>Hourly Temperature</h1>
-                <img src="/images/hourly-chart.png" alt="hourly temp chart" class="hourchart">
-                <p>&nbsp; &#8457;: &nbsp; 67 69 69 69 74 79 84 88 90 83 74 68
-                    <br>Hour: 1 &nbsp; 3 &nbsp; 5 &nbsp; 7 &nbsp; 9 &nbsp; 11 13 15 17 19 21 23</p>
+                <img class="hourchart" src="/images/hourly-chart.png" alt="hourly chart">
+                <table class="hourtable">
+                    <tr>
+                        <th>Hour</th>
+                        <td>0am</td><td>1am</td>
+                        <td>2am</td><td>3am</td>
+                        <td>4am</td><td>5am</td>
+                        <td>6am</td><td>7am</td>
+                        <td>8am</td><td>9am</td>
+                        <td>10am</td><td>11am</td>
+                        <td>12pm</td><td>1am</td>
+                        <td>2pm</td><td>3pm</td>
+                        <td>4pm</td><td>5pm</td>
+                        <td>6pm</td><td>7pm</td>
+                        <td>8pm</td><td>9pm</td>
+                        <td>10pm</td><td>11pm</td>
+                        <td>12pm</td>
+                    </tr>
+                    <tr>
+                        <th>Temp</th>
+                        <td>67&#8457;</td><td>67&#8457;</td>
+                        <td>69&#8457;</td><td>69&#8457;</td>
+                        <td>69&#8457;</td><td>70&#8457;</td>
+                        <td>69&#8457;</td><td>72&#8457;</td>
+                        <td>74&#8457;</td><td>77&#8457;</td>
+                        <td>79&#8457;</td><td>81&#8457;</td>
+                        <td>84&#8457;</td><td>84&#8457;</td>
+                        <td>86&#8457;</td><td>88&#8457;</td>
+                        <td>90&#8457;</td><td>90&#8457;</td>
+                        <td>85&#8457;</td><td>83&#8457;</td>
+                        <td>79&#8457;</td><td>74&#8457;</td>
+                        <td>70&#8457;</td><td>68&#8457;</td>
+                        <td>66&#8457;</td>
+                    </tr>
+                </table>
             </section>
-            <section class="ads">Advertisment Here</section>
+            <section class="ads" id="ad2">Advertisment Here</section>
+            <section class="forcast">
+                <h1 class="forcasth1" >7 Day Forcast</h1>
+                <table class="forcasttable">
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tues</th>
+                        <th>Wed</th>
+                        <th>Thurs</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
+                        <td><img class="ficon" src="/images/weather-icons/partly-cloudy-icon.png" alt="partly cloudy icon"></td>
+                        <td><img class="ficon" src="/images/weather-icons/thunder-storm-icon.png" alt="thunderstorm icon"></td>
+                        <td><img class="ficon" src="/images/weather-icons/rain-icon.png" alt="rain icon"></td>
+                        <td><img class="ficon" src="/images/weather-icons/very-cloudy-icon.png" alt="cloudy icon"></td>
+                        <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
+                        <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
+                    </tr>
+                    <tr>
+                        <td>H: 92&#8457;<br>L: 68&#8457;</td>
+                        <td>H: 88&#8457;<br>L: 60&#8457;</td>
+                        <td>H: 75&#8457;<br>L: 55&#8457;</td>
+                        <td>H: 78&#8457;<br>L: 62&#8457;</td>
+                        <td>H: 81&#8457;<br>L: 65&#8457;</td>
+                        <td>H: 88&#8457;<br>L: 68&#8457;</td>
+                        <td>H: 92&#8457;<br>L: 69&#8457;</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="adstab">Advertisment Here</section>
+            <section class="map">
+                <h1>Map</h1>
+                <img class="mappic" src="/images/franklin-radar.png" alt="Franklin Radar Map">
+            </section>
+            <section class="ad3">Advertisment Here</section>
         </main>
         <footer>
             <ul>
@@ -62,7 +135,9 @@
                 <li>Last Updated: 10/14/2016
                 </li>
             </ul>
-            <img class="wireframe" src="/images/weather-phone-wireframe.png" alt="smartphone wireframe">
+            <img class="wireframesmall" src="/images/weather-phone-wireframe.png" alt="smartphone wireframe">
+            <img class="wireframetab" src="/images/weather-tablet-wireframe-new.png" alt="tablet wireframe">
+            <img class="wireframelarge" src="/images/weather-desktop-wireframe.png" alt="desktop wireframe">
         </footer>
     </div>
 </body>
