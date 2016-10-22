@@ -1,4 +1,4 @@
-html * {
+    html * {
     box-sizing: border-box;
 }
 
@@ -35,9 +35,7 @@ header {
     border-color: darkgray;
     border-width: 2px;
 }
-.width {
-    width:
-}
+
 nav {
     float: right;
     position: absolute;
@@ -180,12 +178,15 @@ section h1 {
 .map {
     display: none;
 }
+
 .adstab {
     display: none;
 }
+
 .wireframelarge {
     display: none;
 }
+
 @media (min-width: 550px) {
     .wireframetab {
         width: 100%;
@@ -194,7 +195,6 @@ section h1 {
     .wireframesmall {
         display: none;
     }
-
     .ads {
         background-color: burlywood;
         height: 65px;
@@ -246,7 +246,6 @@ section h1 {
         left: 49%;
         top: 295px;
     }
-
     .detailp {
         line-height: 1.7;
         color: aliceblue;
@@ -254,7 +253,6 @@ section h1 {
         position: relative;
         top: -10px;
     }
-
     .hourly {
         background-color: #608eea;
         height: 295px;
@@ -265,7 +263,6 @@ section h1 {
         left: 49%;
         top: -65px;
     }
-
     .hourtable {
         font-size: 20px;
         padding-left: 10px;
@@ -274,7 +271,9 @@ section h1 {
         width: 100%;
         color: aliceblue;
     }
-    table, th, td {
+    table,
+    th,
+    td {
         border: 2px solid;
         border-collapse: collapse;
         padding: 5px;
@@ -340,6 +339,7 @@ section h1 {
         display: none;
     }
 }
+
 @media (min-width: 1000px) {
     .wireframelarge {
         width: 100%;
@@ -411,14 +411,12 @@ section h1 {
         top: 0px;
         left: 25%;
     }
-
     .smallh1 {
         font-family: sans-serif;
         font-size: 22px;
         padding-top: 10px;
         padding-left: 10px;
     }
-
     .currentcity {
         position: relative;
         left: 150px;
@@ -467,7 +465,6 @@ section h1 {
         left: 0%;
         top: 5px;
     }
-
     .hourtable {
         font-size: 20px;
         padding-left: 10px;
@@ -476,7 +473,9 @@ section h1 {
         width: 100%;
         color: aliceblue;
     }
-    table, th, td {
+    table,
+    th,
+    td {
         border: 2px solid;
         border-collapse: collapse;
         padding: 5px;
@@ -547,11 +546,8 @@ section h1 {
         position: absolute;
         top: 762px;
         right: 0%
-
-}
-
-/*
-.dropdown {
+    }
+/*.dropdown {
     position: relative;
     display: inline-block;
     font-family: sans-serif;
