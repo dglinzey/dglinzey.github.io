@@ -1,4 +1,4 @@
-html *{
+/*html *{
     box-sizing: border-box;
 }
 
@@ -38,4 +38,9 @@ main {
 
 @media (min-width: 500px) {
 
+} */
+#wrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
+
