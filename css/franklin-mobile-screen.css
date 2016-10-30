@@ -302,34 +302,7 @@ section h1 {
         border-radius: 5px;
         margin: 5px;
     }
-    .forcast {
-        background-color: #608eea;
-        height: 235px;
-        margin: 0px 3%;
-        width: 45%;
-        position: absolute;
-        top: 615px;
-        display: block;
-    }
-    .ficon {
-        width: 25px;
-        margin-left: 15%;
-    }
-    .forcasttable {
-        font-size: 15px;
-        padding: 1px;
-        display: block;
-        overflow: auto;
-        width: 98%;
-        color: aliceblue;
-        margin: 0 1%;
-        position: relative;
-        top: -20px;
-    }
-    .forcasth1 {
-        position: relative;
-        top: -10px;
-    }
+
     footer ul {
         margin: 0 10%;
         padding: 0;
