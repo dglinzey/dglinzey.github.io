@@ -1,184 +1,172 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Weather for Greenville, SC</title>
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="/css/weather-screen-v2.css" media="screen">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Weather for Greenville, SC</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/weather-screen-v2.css" media="screen">
+</head>
 
-    <body>
-        <div id="wrapper">
-            <header>
-                <img src="/images/weather-logo.png" alt="Weather Site Logo">
-            </header>
-            <nav>
-                <div class="width">
-                    <input class="input" type="text" name="search" placeholder="Search by Zip or City">
-                    <img src="/images/menu-icon.png" alt="Menu" class="icon">
+<body>
+    <div id="wrapper">
+        <header id="header">
+        </header>
+        <nav id="nav">
+            <noscript>Javascript is not enabled. Why did you turn it off? Go and enable it!</noscript>
+        </nav>
+        <main>
+            <section class="cities">
+                <h1 class="smallh1">Current City:</h1>
+                <div class="container-cities">
+                    <a class="currentcity" href="/homework/weather/greenville-page.html">Greenville, SC 29601</a>
+                    <ul>
+                        <li><a class="othercities" href="/homework/weather/franklin-mobile.html">Franklin, ID 83237</a></li>
+                        <li><a class="othercities" href="#"> Springfield, IL 62701</a></li>
+                    </ul>
                 </div>
-            </nav>
-            <main>
-                <section class="cities">
-                    <h1 class="smallh1">Current City:</h1>
-                    <div class="container-cities">
-                        <a class="currentcity" href="/homework/weather/greenville-page.html">Greenville, SC 29601</a>
-                        <ul>
-                            <li><a class="othercities" href="/homework/weather/franklin-mobile.html">Franklin, ID 83237</a></li>
-                            <li><a class="othercities" href="#"> Springfield, IL 62701</a></li>
-                        </ul>
-                    </div>
-                </section>
-                <div class="container">
-                    <section class="ads">Advertisment Here</section>
+            </section>
+            <div class="container">
+                <section class="ads">Advertisment Here</section>
 
-                    <div class="desktop-container">
-                        <section class="now">
-                            <h1>Weather Now </h1>
-                            <div class="now-container">
-                                <img src="/images/weather-icons/thunder-storm-icon.png" alt="thunderstorm icon" class="nowicon">
-                                <p class="nowp">Afternoon Thunderstorms
-                                    <br>Temperature
-                                    <br>&nbsp;High: 84&#8457;
-                                    <br>&nbsp;Low: 55&#8457;
-                                    <br>Chance of Rain: 70%
-                                    <br>Wind: Windy
-                                </p>
-                            </div>
-                        </section>
-                        <section class="detail">
-                            <h1>Detailed Info</h1>
-                            <p class="detailp">Wind: 15 - 20 mph
-                                <br>Direction: West
-                                <br>Longitude: -82.362997
-                                <br>Latitude: 34.836902</p>
-                        </section>
-                        <section class="hourly">
-                            <h1>Hourly Temperature</h1>
-                            <img class="hourchart" src="/images/hourly-chart.png" alt="hourly chart">
-                            <table class="hourtable">
-                                <tr>
-                                    <th>Hour</th>
-                                    <td>0am</td>
-                                    <td>1am</td>
-                                    <td>2am</td>
-                                    <td>3am</td>
-                                    <td>4am</td>
-                                    <td>5am</td>
-                                    <td>6am</td>
-                                    <td>7am</td>
-                                    <td>8am</td>
-                                    <td>9am</td>
-                                    <td>10am</td>
-                                    <td>11am</td>
-                                    <td>12pm</td>
-                                    <td>1am</td>
-                                    <td>2pm</td>
-                                    <td>3pm</td>
-                                    <td>4pm</td>
-                                    <td>5pm</td>
-                                    <td>6pm</td>
-                                    <td>7pm</td>
-                                    <td>8pm</td>
-                                    <td>9pm</td>
-                                    <td>10pm</td>
-                                    <td>11pm</td>
-                                </tr>
-                                <tr>
-                                    <th>Temp</th>
-                                    <td>55&#8457;</td>
-                                    <td>56&#8457;</td>
-                                    <td>56&#8457;</td>
-                                    <td>56&#8457;</td>
-                                    <td>57&#8457;</td>
-                                    <td>57&#8457;</td>
-                                    <td>58&#8457;</td>
-                                    <td>62&#8457;</td>
-                                    <td>63&#8457;</td>
-                                    <td>67&#8457;</td>
-                                    <td>70&#8457;</td>
-                                    <td>73&#8457;</td>
-                                    <td>77&#8457;</td>
-                                    <td>80&#8457;</td>
-                                    <td>84&#8457;</td>
-                                    <td>83&#8457;</td>
-                                    <td>83&#8457;</td>
-                                    <td>80&#8457;</td>
-                                    <td>79&#8457;</td>
-                                    <td>74&#8457;</td>
-                                    <td>70&#8457;</td>
-                                    <td>68&#8457;</td>
-                                    <td>60&#8457;</td>
-                                    <td>58&#8457;</td>
-                                </tr>
-                            </table>
-                        </section>
-                        <section class="ads" id="ad2">Advertisment Here</section>
-                        <section class="forcast">
-                            <h1 class="forcasth1">7 Day Forcast</h1>
-                            <table class="forcasttable">
-                                <tr>
-                                    <th>Mon</th>
-                                    <th>Tues</th>
-                                    <th>Wed</th>
-                                    <th>Thurs</th>
-                                    <th>Fri</th>
-                                    <th>Sat</th>
-                                    <th>Sun</th>
-                                </tr>
-                                <tr>
-                                    <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
-                                    <td><img class="ficon" src="/images/weather-icons/partly-cloudy-icon.png" alt="partly cloudy icon"></td>
-                                    <td><img class="ficon" src="/images/weather-icons/thunder-storm-icon.png" alt="thunderstorm icon"></td>
-                                    <td><img class="ficon" src="/images/weather-icons/rain-icon.png" alt="rain icon"></td>
-                                    <td><img class="ficon" src="/images/weather-icons/very-cloudy-icon.png" alt="cloudy icon"></td>
-                                    <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
-                                    <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
-                                </tr>
-                                <tr>
-                                    <td>H: 92&#8457;
-                                        <br>L: 68&#8457;</td>
-                                    <td>H: 88&#8457;
-                                        <br>L: 60&#8457;</td>
-                                    <td>H: 75&#8457;
-                                        <br>L: 55&#8457;</td>
-                                    <td>H: 78&#8457;
-                                        <br>L: 62&#8457;</td>
-                                    <td>H: 81&#8457;
-                                        <br>L: 65&#8457;</td>
-                                    <td>H: 88&#8457;
-                                        <br>L: 68&#8457;</td>
-                                    <td>H: 92&#8457;
-                                        <br>L: 69&#8457;</td>
-                                </tr>
-                            </table>
-                        </section>
-                    </div>
-                    <div class="desktop-container-r">
-                        <section class="adstab" id="desktopad">Advertisment Here</section>
-                        <section class="map">
-                            <h1>Map</h1>
-                            <img class="mappic" src="/images/franklin-radar.png" alt="Franklin Radar Map">
-                        </section>
-                        <section class="ad3">Advertisment Here</section>
-                    </div>
+                <div class="desktop-container">
+                    <section class="now">
+                        <h1>Weather Now </h1>
+                        <div class="now-container">
+                            <img src="/images/weather-icons/thunder-storm-icon.png" alt="thunderstorm icon" class="nowicon">
+                            <p class="nowp">Afternoon Thunderstorms
+                                <br>Temperature
+                                <br>&nbsp;High: 84&#8457;
+                                <br>&nbsp;Low: 55&#8457;
+                                <br>Chance of Rain: 70%
+                                <br>Wind: Windy
+                            </p>
+                        </div>
+                    </section>
+                    <section class="detail">
+                        <h1>Detailed Info</h1>
+                        <p class="detailp">Wind: 15 - 20 mph
+                            <br>Direction: West
+                            <br>Longitude: -82.362997
+                            <br>Latitude: 34.836902</p>
+                    </section>
+                    <section class="hourly">
+                        <h1>Hourly Temperature</h1>
+                        <img class="hourchart" src="/images/hourly-chart.png" alt="hourly chart">
+                        <table class="hourtable">
+                            <tr>
+                                <th>Hour</th>
+                                <td>1am</td>
+                                <td>2am</td>
+                                <td>3am</td>
+                                <td>4am</td>
+                                <td>5am</td>
+                                <td>6am</td>
+                                <td>7am</td>
+                                <td>8am</td>
+                                <td>9am</td>
+                                <td>10am</td>
+                                <td>11am</td>
+                                <td>12am</td>
+                                <td>1pm</td>
+                                <td>2am</td>
+                                <td>3pm</td>
+                                <td>4pm</td>
+                                <td>5pm</td>
+                                <td>6pm</td>
+                                <td>7pm</td>
+                                <td>8pm</td>
+                                <td>9pm</td>
+                                <td>10pm</td>
+                                <td>11pm</td>
+                                <td>12pm</td>
+                            </tr>
+                            <tr>
+                                <th>Temp</th>
+                                <td>55&#8457;</td>
+                                <td>56&#8457;</td>
+                                <td>56&#8457;</td>
+                                <td>56&#8457;</td>
+                                <td>57&#8457;</td>
+                                <td>57&#8457;</td>
+                                <td>58&#8457;</td>
+                                <td>62&#8457;</td>
+                                <td>63&#8457;</td>
+                                <td>67&#8457;</td>
+                                <td>70&#8457;</td>
+                                <td>73&#8457;</td>
+                                <td>77&#8457;</td>
+                                <td>80&#8457;</td>
+                                <td>84&#8457;</td>
+                                <td>83&#8457;</td>
+                                <td>83&#8457;</td>
+                                <td>80&#8457;</td>
+                                <td>79&#8457;</td>
+                                <td>74&#8457;</td>
+                                <td>70&#8457;</td>
+                                <td>68&#8457;</td>
+                                <td>60&#8457;</td>
+                                <td>58&#8457;</td>
+                            </tr>
+                        </table>
+                    </section>
+                    <section class="ads" id="ad2">Advertisment Here</section>
+                    <section class="forcast">
+                        <h1 class="forcasth1">7 Day Forcast</h1>
+                        <table class="forcasttable">
+                            <tr>
+                                <th>Mon</th>
+                                <th>Tues</th>
+                                <th>Wed</th>
+                                <th>Thurs</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                                <th>Sun</th>
+                            </tr>
+                            <tr>
+                                <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
+                                <td><img class="ficon" src="/images/weather-icons/partly-cloudy-icon.png" alt="partly cloudy icon"></td>
+                                <td><img class="ficon" src="/images/weather-icons/thunder-storm-icon.png" alt="thunderstorm icon"></td>
+                                <td><img class="ficon" src="/images/weather-icons/rain-icon.png" alt="rain icon"></td>
+                                <td><img class="ficon" src="/images/weather-icons/very-cloudy-icon.png" alt="cloudy icon"></td>
+                                <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
+                                <td><img class="ficon" src="/images/weather-icons/sun-icon.png" alt="sun icon"></td>
+                            </tr>
+                            <tr>
+                                <td>H: 92&#8457;
+                                    <br>L: 68&#8457;</td>
+                                <td>H: 88&#8457;
+                                    <br>L: 60&#8457;</td>
+                                <td>H: 75&#8457;
+                                    <br>L: 55&#8457;</td>
+                                <td>H: 78&#8457;
+                                    <br>L: 62&#8457;</td>
+                                <td>H: 81&#8457;
+                                    <br>L: 65&#8457;</td>
+                                <td>H: 88&#8457;
+                                    <br>L: 68&#8457;</td>
+                                <td>H: 92&#8457;
+                                    <br>L: 69&#8457;</td>
+                            </tr>
+                        </table>
+                    </section>
                 </div>
-            </main>
-            <footer>
-                <ul>
-                    <li>&copy;2016</li>
-                    <li>
-                        David Linzey
-                    </li>
-                    <li>Last Updated: 10/29/2016
-                    </li>
-                </ul>
-                <img class="wireframesmall" src="/images/weather-phone-wireframe.png" alt="smartphone wireframe">
-                <img class="wireframetab" src="/images/weather-tablet-wireframe-new.png" alt="tablet wireframe">
-                <img class="wireframelarge" src="/images/weather-desktop-wireframe.png" alt="desktop wireframe">
-            </footer>
-        </div>
-    </body>
+                <div class="desktop-container-r">
+                    <section class="adstab" id="desktopad">Advertisment Here</section>
+                    <section class="map">
+                        <h1>Map</h1>
+                        <img class="mappic" src="/images/franklin-radar.png" alt="Franklin Radar Map">
+                    </section>
+                    <section class="ad3">Advertisment Here</section>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="/modules/modules.js"></script>
+</body>
 
 </html>

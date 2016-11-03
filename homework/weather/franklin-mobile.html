@@ -10,14 +10,10 @@
 
 <body>
     <div id="wrapper">
-        <header>
-            <img src="/images/weather-logo.png" alt="Weather Site Logo">
+        <header id="header">
         </header>
-        <nav>
-            <div class="width">
-                <input class="input" type="text" name="search" placeholder="Search by Zip or City">
-                <img src="/images/menu-icon.png" alt="Menu" class="icon">
-            </div>
+        <nav id="nav">
+            <noscript>Javascript is not enabled. Why did you turn it off? Go and enable it!</noscript>
         </nav>
         <main>
             <section class="cities">
@@ -60,7 +56,6 @@
                         <table class="hourtable">
                             <tr>
                                 <th>Hour</th>
-                                <td>0am</td>
                                 <td>1am</td>
                                 <td>2am</td>
                                 <td>3am</td>
@@ -72,9 +67,9 @@
                                 <td>9am</td>
                                 <td>10am</td>
                                 <td>11am</td>
-                                <td>12pm</td>
-                                <td>1am</td>
-                                <td>2pm</td>
+                                <td>12am</td>
+                                <td>1pm</td>
+                                <td>2am</td>
                                 <td>3pm</td>
                                 <td>4pm</td>
                                 <td>5pm</td>
@@ -100,7 +95,6 @@
                                 <td>77&#8457;</td>
                                 <td>79&#8457;</td>
                                 <td>81&#8457;</td>
-                                <td>84&#8457;</td>
                                 <td>84&#8457;</td>
                                 <td>86&#8457;</td>
                                 <td>88&#8457;</td>
@@ -167,20 +161,11 @@
                 </div>
             </div>
         </main>
-        <footer>
-            <ul>
-                <li>&copy;2016</li>
-                <li>
-                    David Linzey
-                </li>
-                <li>Last Updated: 10/29/2016
-                </li>
-            </ul>
-            <img class="wireframesmall" src="/images/weather-phone-wireframe.png" alt="smartphone wireframe">
-            <img class="wireframetab" src="/images/weather-tablet-wireframe-new.png" alt="tablet wireframe">
-            <img class="wireframelarge" src="/images/weather-desktop-wireframe.png" alt="desktop wireframe">
+        <footer id="footer">
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="/modules/modules.js"></script>
 </body>
 
 </html>
