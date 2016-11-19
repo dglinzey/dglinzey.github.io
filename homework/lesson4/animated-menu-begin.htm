@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Menu</title>
+    <link rel="stylesheet" href="css/animated-menu.css">
+    <!-- <script src="js/jquery-3.0.0.min.js"></script> -->
+    <script   src="//code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script>
+    $(function(){
+        // All jQuery code goes here
+        $('.navigation > li').hover(function(){
+            $(this).addClass('openSesame');
+            }, function(){
+            $(this).removeClass('openSesame');
+        });
+    })
+    </script>
+</head>
+<body>
+    <ul class="navigation">
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Catalog</li>
+        <li>Blog</li>
+        <li>Contact</li>
+    </ul>
+</body>
+    <footer>
+        <ul>
+            <li><a href="index.htm" title="Alcove Home">Alcove Home</a></li>
+            <li><a href="animated-menu-begin.htm" title="Animated Menu">Animated Menu</a></li>
+            <li><a href="drop-down-menu-begin.htm" title="Drop Down Menu">Drop Down Menu</a></li>
+            <li><a href="fruit-basket-begin.htm" title="Fruit Basket">Fruit Basket</a></li>
+            <li><a href="insert-html-begin.htm" title="Insert HTML">Insert HTML</a></li>
+            <li><a href="toggle-button-begin.htm" title="Toggle Button">Toggle Button</a></li>
+        </ul>
+    </footer>
+</html>
