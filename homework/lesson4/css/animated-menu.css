@@ -36,11 +36,4 @@ body, html {
 li.openSesame {
     left:0px;
 }
-footer li {
-    display: inline;
-    position: relative;
-    top: 50px;
-    left: 20px;
-    padding: 10px;
-    background-color: #e3e4e5;
-}
+
