@@ -36,7 +36,7 @@ $(function () {
                 var RtempF = Math.round(tempF);
                 $('.title').append(" " + city + ", " + state);
                 $("#title").text("Weather Now: " + city + ", " + state);
-                $("#currentTemp").text(RtempF + " \u00B0F");
+                $("#currentTemp").text("Temperature: " + RtempF + " \u00B0F");
                 $("#summary").text(weather);
                 $("#feelsLike").text("Feels Like: " + feelsLike + " \u00B0F");
                 $("#windDescription").text(windDescription);
