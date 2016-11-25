@@ -99,7 +99,6 @@ footer li {
 
 .nowicon {
     position: relative;
-    top: 0 px;
     left: 60%;
     width: 35%;
     max-width: 175px;
@@ -208,7 +207,6 @@ a:hover {
     }
     .nowicon {
         position: relative;
-        top: 0 px;
         left: 55%;
         width: 40%;
         max-width: 175px;
@@ -284,7 +282,6 @@ a:hover {
     }
     .nowicon {
         position: relative;
-        top: 0 px;
         left: 55%;
         width: 45%;
         max-width: 175px;
