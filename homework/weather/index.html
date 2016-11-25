@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title class="title">Weather for:</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/weather-screen-v2c.css" media="screen">
+</head>
+<!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. David Linzey
+* 2. Eric Keller
+* 3. Alan Alberro
+* 4.
+* 5.
+* ******************************************** -->
+
+<body>
+    <div id="wrapper">
+        <header id="header">
+        </header>
+        <nav id="nav">
+            <noscript>Javascript is not enabled. Why did you turn it off? Go and enable it! <a href="/homework/index.html">Sitemap</a></noscript>
+        </nav>
+        <main>
+            <section class="cities">
+                <h1 class="smallh1">Current City:</h1>
+                <a class="currentcity" href="/homework/weather/franklin-mobile.html">Franklin, ID 83237</a>
+                <ul>
+                    <li><a class="othercities" href="/homework/weather/greenville-page.html">Greenville, SC 29601</a></li>
+                    <li><a class="othercities" href="#"> Springfield, IL 62701</a></li>
+                </ul>
+            </section>
+            <section class="now">
+                <h1 id="title"></h1>
+                <img src="/images/sun-icon.png" alt="Sun icon" class="nowicon">
+                <ul class="nowp">
+                    <li id="summary"></li>
+                    <li>Tempurature:</li>
+                    <li id="currentTemp"></li>
+                    <li id="feelsLike"></li>
+                    <li id="rain"></li>
+                    <li id="windDescription"></li>
+                </ul>
+            </section>
+        </main>
+        <footer id="footer">
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="/modules/modules.js"></script>
+    <script src="/homework/weather/currentjs.js"></script>
+</body>
+
+</html>
