@@ -52,10 +52,25 @@ nav {
     padding: 2px;
     border-radius: 5px;
 }
+.search {
+    position: relative;
+    top: -10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #e3f4f9;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+}
 ul {
     list-style-type: none;
     width: 320px;
     padding: 0;
+}
+
+ol li a, ol {
+    color: aliceblue;
 }
 
 .othercities {
@@ -85,6 +100,7 @@ footer li {
 }
 .smallh1 {
     font-family: sans-serif;
+    color: aliceblue;
     font-size: 22px;
     padding-top: 10px;
     padding-left: 10px;
@@ -95,7 +111,16 @@ footer li {
     top: 0px;
     left: 0;
 }
-
+#query {
+    width: 60%;
+    height: 24px;
+    margin-left: 2%;
+}
+#send {
+    width: 20%;
+    height: 24px;
+    font-size: 14px;
+}
 
 .nowicon {
     position: relative;
@@ -107,6 +132,11 @@ footer li {
 .now {
     background-color: #608eea;
     height: 335px;
+    margin: 1.5% 3%;
+}
+.nowS {
+    background-color: #608eea;
+    height: 600px;
     margin: 1.5% 3%;
 }
 
@@ -158,6 +188,11 @@ a:hover {
         width: 94%;
         flex-grow: 1;
     }
+    .nowS {
+        background-color: #608eea;
+        height: 600px;
+        margin: 1.5% 3%;
+    }
     .nowp {
         line-height: 1.7;
         color: aliceblue;
@@ -177,7 +212,27 @@ a:hover {
         border-color: darkgray;
         border-width: 2px;
     }
-
+    .search {
+        position: relative;
+        top: -10px;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e3f4f9;
+        padding: 2px 25px 2px 25px;
+        border-radius: 5px;
+    }
+    #query {
+        width: 50%;
+        height: 24px;
+        margin-left: 2%;
+    }
+    #send {
+        width: 10%;
+        height: 24px;
+        font-size: 14px;
+    }
     .currentcity {
         position: relative;
         left: 150px;
@@ -266,12 +321,27 @@ a:hover {
     ul {
         width: 500px;
     }
+    #query {
+        width: 40%;
+        height: 24px;
+        margin-left: 2%;
+    }
+    #send {
+        width: 10%;
+        height: 24px;
+        font-size: 14px;
+    }
     .now {
         background-color: #608eea;
         height: 315px;
         margin: 3% 0% 1.5% 3%;
         width: 94%;
         order: 1;
+    }
+    .nowS {
+        background-color: #608eea;
+        height: 600px;
+        margin: 1.5% 3%;
     }
     .nowp {
         position: absolute;

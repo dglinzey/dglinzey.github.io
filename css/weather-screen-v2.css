@@ -32,7 +32,17 @@ header {
     border-color: darkgray;
     border-width: 2px;
 }
-
+.search {
+    position: relative;
+    top: -10px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: #e3f4f9;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+}
 nav {
     float: right;
     position: absolute;
@@ -339,6 +349,17 @@ a:hover {
         border-radius: 10px;
         border-color: darkgray;
         border-width: 2px;
+    }
+    .search {
+        position: relative;
+        top: -10px;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        background-color: #e3f4f9;
+        padding: 2px 25px 2px 25px;
+        border-radius: 5px;
     }
     .forcast {
         display: none;
