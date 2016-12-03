@@ -4,7 +4,7 @@ $('#query').keyup(function(){
     var value = $('#query').val();
     var rExp = new RegExp(value, "i");
 
-    $.getJSON("http://autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
+    $.getJSON("//autocomplete.wunderground.com/aq?query=" + value + "&cb=?", function (data) {
         console.log(data);
 
         // Begin building output
@@ -12,7 +12,7 @@ $('#query').keyup(function(){
         $.each(data.RESULTS, function(key, val) {
             if (val.name.search(rExp) != -1) {
                 output += '<li>';
-                output += '<a href="http://www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
+                output += '<a href="//www.wunderground.com' + val.l + '" title="See results for ' + val.name + '">' + val.name + '</a>';
                 output += '</li>';
             }
         }); // end each
@@ -39,7 +39,7 @@ function getData(lat, lon) {
             var low = data.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
             var summary = data.current_observation.weather;
             var icon = data.current_observation.icon;
-            var iconurl = "http://icons.wxug.com/i/c/k/" +icon+ ".gif";
+            var iconurl = "//icons.wxug.com/i/c/k/" +icon+ ".gif";
             var wind = data.current_observation.wind_string;
             console.log('Location is: ' + location);
             console.log('Temp is: ' + temp_f);
