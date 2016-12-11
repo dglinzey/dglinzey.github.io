@@ -1,0 +1,237 @@
+html * {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-size: 17px;
+    line-height: 1.25;
+    margin: 0px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.topPart {
+    background-color: #EDBB99;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    align-items: center;
+}
+.menuList {
+    display: none;
+
+}
+.menuIcon {
+    width: auto;
+    height: 40px;
+    padding-right: 10px;
+}
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+}
+.infoSection {
+    background-color: #EDBB99;
+    list-style-type: none;
+    padding: 2%;
+    margin: 2% 2% 0 2%;
+    order: 1;
+}
+h1 {
+    font-size: 21px;
+    margin: 10px 0 10px 0;
+    color: #0c2b5b;
+    font-weight: 500;
+}
+h2 {
+    font-size: 19px;
+    margin: 10px 0 10px 0;
+    color: #0c2b5b;
+    font-weight: 500;
+}
+.qualifySection {
+    background-color: #EDBB99;
+    list-style-type: none;
+    padding: 2%;
+    margin: 2% 2% 0 2%;
+    order: 3;
+}
+.homeButton1, .homeButton2{
+    background-color: #8db3ef;
+    padding: 2%;
+    margin: 2% 2% 0 2%;
+    text-align: center;
+    border: 2px solid #0c2b5b;
+    text-decoration: none;
+    order: 2;
+    border-radius: 10px;
+}
+a:hover {
+    background-color: #ced4dd;
+}
+.infographicSection {
+    order: 4;
+    background-color: #EDBB99;
+    padding: 2%;
+    margin: 2% 2% 0 2%;
+}
+.infographic img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.foot {
+    background-color: #EDBB99;
+}
+footer li {
+    display: inline;
+    font-size: 14px;
+}
+footer ul {
+    padding: 2%;
+}
+.dropdown {
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: aliceblue;
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #0c2b5b;
+}
+.dropdown-content a {
+    border: 2px solid #0c2b5b;
+    width: 250px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #8db3ef;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-content a:hover {
+    background-color: #ced4dd
+}
+
+@media (min-width: 550px) {
+    .menuList {
+        display: flex;
+        width: 100%;
+        flex-grow: 1;
+    }
+    .contact {
+        display: none;
+    }
+    .calcLoan {
+        display: none;
+    }
+    .loanInfo {
+        flex-grow: 1;
+        width: 20%;
+    }
+    .loanReq {
+        flex-grow: 1;
+        width: 20%;
+    }
+    .menuList a {
+        background-color: #8db3ef;
+        padding: 2%;
+        margin: 2% 2% 0 2%;
+        text-align: center;
+        border: 2px solid #0c2b5b;
+        text-decoration: none;
+        order: 2;
+        border-radius: 10px;
+    }
+    .menuList a:hover {
+        background-color: #ced4dd;
+    }
+    .mainDiv {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .infoSection {
+        width: 40%;
+        order: 1;
+        flex-grow: 1;
+        margin: 2% 0 0 2%;
+    }
+    .qualifySection {
+        width: 40%;
+        order: 2;
+        flex-grow: 1;
+        margin: 2% 2% 0 2%;
+    }
+    .homeButton1 {
+        width: 40%;
+        order: 3;
+        flex-grow: 1;
+        margin: 2% 0 0 2%;
+    }
+    .homeButton2 {
+        width: 40%;
+        order: 4;
+        flex-grow: 1;
+    }
+    .infographicSection {
+        width: 100%;
+    }
+    .infographic img {
+        width: 500px;
+        border: 0;
+        margin-left: calc((100% - 500px)/2);
+        margin-right: calc((100% - 500px)/2);
+    }
+}
+@media (min-width: 1000px) {
+    .contact {
+        flex-grow: 1;
+        width: 10%;
+        display: inherit;
+    }
+    .calcLoan {
+        flex-grow: 1;
+        width: 10%;
+        display: inherit;
+    }
+    .loanInfo {
+        flex-grow: 1;
+        width: 10%;
+    }
+    .loanReq {
+        flex-grow: 1;
+        width: 10%;
+    }
+    .infographic img {
+        width: 650px;
+        border: 0;
+        margin-left: calc((100% - 650px)/2);
+        margin-right: calc((100% - 650px)/2);
+    }
+    .menuList a {
+        padding: 1%;
+    }
+    .menuList {
+        align-items: center;
+        justify-content: center;
+    }
+    .homeButton1, .homeButton2 {
+        padding: 1%;
+    }
+}
