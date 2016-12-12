@@ -128,6 +128,23 @@ footer ul {
 .dropdown-content a:hover {
     background-color: #ced4dd
 }
+.fullScreen {
+    background-color: #EDBB99;
+    padding: 2%;
+    margin: 2% 2% 0 2%;
+    width: 96%;
+}
+form button {
+    background-color: #8db3ef;
+    width: 25%;
+    height: 25px;
+}
+textarea {
+    width: 90%;
+}
+.video {
+    width: 96%;
+}
 
 @media (min-width: 550px) {
     .menuList {

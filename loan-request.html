@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Request a Loan</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="/css/debt-fix-screen.css" media="screen">
+    </head>
+
+    <body>
+        <div class="topPart">
+            <header class="header">
+
+            </header>
+            <nav class="nav">
+                <noscript>Javascript is not enabled. Why did you turn it off? Go and enable it!</noscript>
+            </nav>
+        </div>
+        <main>
+            <div class="mainDiv">
+                <div class="fullScreen">
+                    <h1 id="loanRequest">Loan Request Form</h1>
+                    <form>
+                        First Name:<input type="text" id="firstname"><br>
+                        Last Name:<input type="text" id="lastname"><br>
+                        Email: <input type="email" id="email"><br>
+                        Gender: <input type="radio" name="gender" id="male">Male <input type="radio" name="gender" id="female">Female<br>
+                        Monthly Income:<input type="radio" name="income" id="less1000">Less than $1,000 <input type="radio" name="income" id="i1000to2000">$1,000-$2,000 <input type="radio" name="income" id="i2000to3000">$2,000-$3,000 <input type="radio" name="income" id="more3000">More than $3,000<br>
+                        Loan Size: <input type="number" id="loanSize"><br>
+                        Credit Score: <input type="number" id="creditScore">
+                        <br><button type="button" onclick="javascript:loanRequest()" id="loanRequestB">Submit</button>
+                    </form>
+                    <div id="output"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="foot">
+
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="/modules/debtmodules/modules.js"></script>
+        <script src="/js/debtfix.js"></script>
+    </body>
+
+</html>
