@@ -20,15 +20,16 @@
         <main>
             <div class="mainDiv">
                 <div class="fullScreen">
-                    <h1>Contact Us</h1>
-                    <p>If you have any questions for us, feel free to send us a message and we will quickly respond to any questions you may have.</p>
-                    <form>
-                        First Name:<br>
+                    <h1 id="CUtitle"></h1>
+                    <p id="phrase"></p>
+                    <form id="contact">
+                        <div id="firstName"></div><br>
                         <input type="text" name="firstname"><br>
-                        Enter Message:<br>
+                        <div id="prompt"></div><br>
                         <textarea rows="8"></textarea><br>
-                        <button type="button">Send</button>
+                        <button type="button" id="send">Send</button>
                     </form>
+                    <div id="sentMessage"></div>
                 </div>
             </div>
         </main>
@@ -37,7 +38,7 @@
         </footer>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="/modules/debtmodules/modules.js"></script>
-        <script src=""></script>
+        <script src="/js/debtfix.js"></script>
     </body>
 
 </html>

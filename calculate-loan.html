@@ -19,13 +19,20 @@
         </div>
         <main>
             <div class="mainDiv">
-                <div class="fullScreen">
+                <div class="infoSection">
                     <h1>Calculate your Loan</h1>
+                    <form>
                     Loan Amount: <input type="text" id="loanAmount"><br>
                     Loan Term (months): <input type="number" id="term"><br>
                     Loan APR (ex .06): <input type="number" id="apr"><br>
-                    <button id="calcLoanB" onclick="calcLoan()">Calculate</button>
-                    <div class="output"></div>
+                    Current Monthly Payment: <input type="number" id="current"><br>
+                    Remaining Months to Pay Off: <input type="number" id="currentM"><br>
+                    <button id="calcLoanB" onclick="javascript:calcLoan()">Calculate</button>
+                    </form>
+                </div>
+                <div class="qualifySection">
+                    <h1>The Results:</h1>
+                    <div id="outputCalc"></div>
                 </div>
             </div>
         </main>
